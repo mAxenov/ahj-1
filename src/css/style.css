@@ -1,3 +1,39 @@
 body {
-    color: #999;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.66;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.board {
+    width: 400px;
+    height: 400px;
+    background-color: #FFC373;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.board-item {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #A65F00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board-item-img{
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
 }
