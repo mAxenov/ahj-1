@@ -18,7 +18,7 @@ export default class Game {
 
   deleteElement(position) {
     const parentElement = this.element.querySelectorAll('.board-item');
-    parentElement[position].removeChild(parentElement[position].querySelector('.board-item-img'));
+    parentElement[position].querySelector('.board-item-img').remove();
   }
 
   addElement(position) {
@@ -26,7 +26,7 @@ export default class Game {
     elementImg.src = img;
     elementImg.classList.add('board-item-img');
     const parentElements = this.element.querySelectorAll('.board-item');
-    parentElements[position].appendChild(elementImg);
+    parentElements[position].append(elementImg);
     this.lastAddedElement = position;
   }
 
