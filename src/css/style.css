@@ -4,6 +4,7 @@ body {
     font-weight: normal;
     line-height: 1.66;
     margin: 0;
+    text-align: center;
 }
 
 * {
@@ -16,7 +17,7 @@ body {
     width: 400px;
     height: 400px;
     background-color: #FFC373;
-    margin: 100px auto;
+    margin: 20px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,4 +37,10 @@ body {
     object-fit: contain;
     height: 100px;
     width: 100px;
+    cursor: url('../img/pngwing.png'), auto; 
+}
+
+hr {
+    width: 500px;
+    margin:auto;
 }

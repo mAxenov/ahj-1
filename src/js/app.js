@@ -1,11 +1,14 @@
 // TODO: write code here
 
-const { default: Game } = require('./game');
+const { default: Game } = require('./components/game');
+const { default: GameMechanics } = require('./components/GameMechanics');
 
 // comment this to pass build
 document.addEventListener('DOMContentLoaded', () => {
-  const game = new Game(document.querySelector('.board'));
+  const game = new Game('.board');
+  const gameMech = new GameMechanics('.board', game.deleteElement);
   game.startGame();
+
   // console.log(game.createElement());
   // game.addElement(10);
   // game.deleteElement(10);

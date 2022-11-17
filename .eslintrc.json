@@ -1,11 +1,14 @@
 {
   "extends": "airbnb-base",
   "env": {
-     "es6": true,
-     "browser": true,
-     "jest": true
+    "es6": true,
+    "browser": true,
+    "jest": true
   },
   "rules": {
+    "no-plusplus": "off",
+    "no-unused-vars": "off",
+    "no-param-reassign": "off",
     "no-restricted-syntax": [
       "error",
       "LabeledStatement",
